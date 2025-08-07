@@ -1,6 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<style>
+		html, body {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			overflow: hidden; /* optional: to prevent scrollbars */
+		}
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #E8ECEF;
+			overscroll-behavior-y: contain;
+		}
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			border: none;
+		}
+	</style>
 	
 	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
@@ -17,8 +38,6 @@
 
   <!-- meta tags for responsive web on mobile/desktop -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <!-- Linking to external CSS file -->
-   <link rel="stylesheet" href="/Styles.css?v=0.1">
   
 </head>
 <body>
