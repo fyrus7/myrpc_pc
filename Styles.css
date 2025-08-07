@@ -1,22 +1,40 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow: hidden; /* optional: to prevent scrollbars */
+    body {
+/* Disables pull-to-refresh but allows overscroll glow effects. */
+      overscroll-behavior-y: contain;
+    }
+
+/* Make sure body and html take up the full height */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+	
+	body {
+    font-family: Arial, sans-serif;
+    background-color: #E8ECEF;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #E8ECEF;
-  overscroll-behavior-y: contain;
+    /* Centering the iframe and making it take up the available space */
+    iframe {
+      width: 100%;
+      flex-grow: 1; /* Allow iframe to grow and take up space */
+      border: none;
+    }
+
+.copyright {
+  /*  margin-top: 5px; /* Add some space between social icons and copyright */
+    font-size: 1px; /* Font size for copyright text */
+    color: #455A64; /* Copyright text color */
 }
 
-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  border: none;
+    /* Footer area to hold the button and copyright */
+footer {
+    margin-top: auto; /* Pushes footer to the bottom */
+    background-color: transparent; /* #E8ECEF; /* Match background color */
+   /* padding: 5px; /* Add padding */
+    color: transparent; /* #455A64; /* Change text color for visibility */
+    text-align: center;
 }
-
