@@ -1,25 +1,21 @@
-    body {
-/* Disables pull-to-refresh but allows overscroll glow effects. */
-      overscroll-behavior-y: contain;
-    }
-
-/* Make sure body and html take up the full height */
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-	
-	body {
-    font-family: Arial, sans-serif;
-    background-color: #E8ECEF;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* optional: to prevent scrollbars */
 }
 
-    /* Centering the iframe and making it take up the available space */
-    iframe {
-      width: 100%;
-      flex-grow: 1; /* Allow iframe to grow and take up space */
-      border: none;
-    }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #E8ECEF;
+  overscroll-behavior-y: contain;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  border: none;
+}
