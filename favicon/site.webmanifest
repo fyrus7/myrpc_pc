@@ -1,6 +1,6 @@
 {
-    "name": "MyRPC",
-    "short_name": "MyRPC",
+    "name": "MyRPC_PC",
+    "short_name": "MyRPC_PC",
     "icons": [
         {
             "src": "/favicon/android-chrome-192x192.png",
