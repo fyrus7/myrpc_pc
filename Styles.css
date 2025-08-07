@@ -20,10 +20,3 @@ iframe {
   border: none;
 }
 
-footer {
-    margin-top: auto; /* Pushes footer to the bottom */
-    background-color: #E8ECEF; /* Match background color */
-    padding: 1px; /* Add padding */
-    color: #455A64; /* Change text color for visibility */
-    text-align: center;
-}
